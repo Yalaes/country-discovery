@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;600;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Country Discovery</title>
+  </head>
+  <body>
+    <header class="app-header">
+      <div class="logo">
+        <i class="fa fa-globe fa-lg"></i>
+        <h1>Country<br />Discovery</h1>
+      </div>
+
+      <div class="score">
+        <p class="score-label">First try streak</p>
+        <div class="score-value">
+          <i class="fa fa-fire" aria-hidden="true"></i>
+          <span class="score-number">0</span>
+        </div>
+      </div>
+      <div class="help">
+        <i class="fa fa-question"></i>
+      </div>
+    </header>
+    <main class="page-content">
+      <section class="intro">
+        <p class="intro-medium">A WORLD TO DISCOVER</p>
+        <p class="intro-big">Where does this<br />flag belong?</p>
+        <p class="intro-small">Pick the country you think it is.</p>
+      </section>
+      <section class="game">
+        <section class="flag-panel">
+          <img
+            class="flag-img"
+            src="https://flags.restcountries.com/v5/w640/fr.png"
+            alt="flag to guess"
+          />
+        </section>
+        <section class="choices">
+          <ul class="country-options">
+            <li><button class="choice">Thailand</button></li>
+            <li><button class="choice">Italy</button></li>
+            <li><button class="choice">Switzerland</button></li>
+            <li><button class="choice">Corsica</button></li>
+          </ul>
+        </section>
+      </section>
+    </main>
+    <footer class="app-footer">footer</footer>
+  </body>
+</html>
