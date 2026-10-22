@@ -13,7 +13,7 @@
   --font-size-sm: 0.75rem;
   --font-size-l: 1.3rem;
   --font-size-xl: 1.6rem;
-  --font-size-xxl: 2rem;
+  --font-size-xxl: 2.5rem;
 
   /* Font weights */
   --font-weight-light: 400;
@@ -113,6 +113,8 @@ header.app-header {
 .help {
   display: flex;
   justify-content: flex-end;
+  border: none;
+  background: none;
 }
 .help i {
   height: 2rem;
@@ -142,7 +144,7 @@ header.app-header {
   gap: 1rem;
 }
 section.intro {
-  padding: var(--padding-xs) var(--padding-sm);
+  padding: var(--padding-sm) var(--padding-sm);
 }
 section.intro p {
   margin: 0;
@@ -171,39 +173,32 @@ section.game {
 .flag-panel {
   /* flex: 1; */
   width: 100%;
-  padding: var(--padding-sm);
+  padding: 0 var(--padding-sm);
   min-height: 0;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
 }
 
 .flag-img {
+  align-self: flex-start;
+  width: auto;
+  height: auto;
   max-width: 100%;
   max-height: 100%;
   object-fit: contain;
+  object-position: top center;
+  border: 3px solid var(--color-text-secondary);
+  border-radius: var(--padding-sm);
+  box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.2);
 }
 
 section.choices {
+  margin-top: 15px;
   padding: var(--padding-sm);
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-/* env */
-ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.7rem;
-}
-
-li {
-  flex: 1 1 calc(50% - 0.75rem);
 }
 
 button.choice {
@@ -215,4 +210,53 @@ button.choice {
   cursor: pointer;
   font-size: var(--font-size-l);
   font-weight: var(--font-weight-semibold);
+
+  transition: all 0.4s ease;
+}
+
+button.choice:hover {
+  background-color: var(--color-border-medium);
+}
+
+footer ul {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  padding: var(--padding-sm);
+  font-size: var(--font-size-sm);
+}
+footer li {
+  text-align: center;
+}
+
+/* env */
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.7rem;
+}
+
+li {
+  flex: 1 1 calc(50% - 0.75rem);
+}
+
+@media (orientation: landscape) {
+  html,
+  body {
+    overflow: auto;
+  }
+
+  body {
+    height: auto;
+    min-height: 100dvh;
+  }
+
+  main.page-content {
+    overflow-x: hidden;
+    overflow-y: visible;
+  }
 }

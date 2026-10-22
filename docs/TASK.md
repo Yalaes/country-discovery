@@ -4,19 +4,19 @@
 
 ### Project setup
 
-- [ ] Set up the basic project structure
-- [ ] Create the HTML, CSS, and JavaScript files
-- [ ] Build a mobile-first base layout
+- [x] Set up the basic project structure
+- [x] Create the HTML, CSS, and JavaScript files
+- [x] Build a mobile-first base layout
 
 ### Game interface
 
-- [ ] Create a compact header with the app name or logo on the left
-- [ ] Display the first-try streak in the center of the header
-- [ ] Add a help button on the right
-- [ ] Display the selected country's flag prominently
-- [ ] Display a group of country names as answer choices
-- [ ] Make the answer choices easy to tap on mobile
-- [ ] Adapt the layout for mobile, tablet, and laptop screens
+- [x] Create a compact header with the app name or logo on the left
+- [x] Display the first-try streak in the center of the header
+- [x] Add a help button on the right
+- [x] Display the selected country's flag prominently
+- [x] Display a group of country names as answer choices
+- [x] Make the answer choices easy to tap on mobile
+- [x] Adapt the layout for mobile, tablet, and laptop screens
 
 ### Educational design
 
@@ -29,13 +29,12 @@
 
 ### Country data
 
-- [ ] Fetch country data from a free API
-      https://restcountries.com/
+- [x] Fetch country data from a free API https://countries.dev/
 - [ ] Handle loading, error, and empty states
 - [ ] Define child-friendly geographic and social facts to display
 - [ ] Add a link to view the country's location on a map
 - [ ] Credit external APIs and resources in the help section
-- [ ] Select APIs that work reliably in mobile browsers (HTTPS, CORS, and suitable usage limits)
+- [x] Select APIs that work reliably in mobile browsers (HTTPS, CORS, and suitable usage limits)
 
 ### Gameplay
 
@@ -59,7 +58,7 @@
 
 ### Help
 
-- [ ] Explain how to play
+- [x] Explain how to play
 - [ ] Add credits for APIs and other resources
 - [ ] Add any relevant legal information
 
