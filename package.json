@@ -1,0 +1,26 @@
+{
+  "name": "country-discovery",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/Yalaes/country-discovery#readme",
+  "bugs": {
+    "url": "https://github.com/Yalaes/country-discovery/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Yalaes/country-discovery.git"
+  },
+  "type": "module",
+  "main": "/js/main.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "eslint": "^10.13.0",
+    "globals": "^17.13.0"
+  }
+}
