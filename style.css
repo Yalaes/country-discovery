@@ -175,7 +175,7 @@ section.game {
 .flag-panel {
   /* flex: 1; */
   width: 100%;
-  padding: 0 var(--padding-sm);
+  padding-bottom: 1rem;
   min-height: 0;
   display: flex;
   align-items: flex-start;
@@ -183,14 +183,10 @@ section.game {
 }
 
 .flag-img {
-  align-self: flex-start;
-  width: auto;
-  height: auto;
-  max-width: 100%;
-  max-height: 300px;
+  max-width: 90%;
+  max-height: 28svh;
   object-fit: contain;
-  object-position: top center;
-  border: 3px solid var(--color-text-secondary);
+  border: 2px solid black;
   border-radius: var(--padding-sm);
   box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.2);
 }
@@ -213,8 +209,7 @@ ul.country-options {
 
 /* choice buttons */
 .choice {
-  padding: 1rem;
-  font-size: var(--font-size-reg);
+  padding: 0.5rem;
   font-weight: var(--font-weight-semibold);
   background-color: var(--color-border-light);
   border-radius: 2rem;
@@ -230,14 +225,10 @@ ul.country-options {
   background-color: orange;
 }
 
-.app-footer {
-  margin: 20px auto;
-}
-
 footer ul {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  padding: var(--padding-sm);
+  padding-bottom: var(--padding-sm);
   font-size: var(--font-size-sm);
   text-align: center;
 }
