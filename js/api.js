@@ -8,7 +8,6 @@ export async function getCountries() {
   const res = await fetch(API_URL, {
     method: "GET",
   });
-
   if (!res.ok) {
     throw new Error(`API Error: ${res.status}`);
   }

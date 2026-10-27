@@ -2,17 +2,23 @@
 import { getCountries } from "./api.js";
 import { prepareCountry, choices_buttons } from "./countries.js";
 import { display_ui, get_buttons, listen_buttons } from "./ui.js";
+// for debug only
+import { debugCountriesJSON } from "./debug.js";
 
 let score = 0;
 const scoreID = document.querySelector("#score-number");
 let countries = [];
-// call when page is loaded , else countries[] allready assigned
+
+// Fetch only load page, else countries[] allready assigned
 async function start() {
   try {
     countries = await getCountries();
-    console.log(`${countries.length} countries loaded`);
+    console.log(`${countries.length}`);
+    // game loop
     showNext();
+    // add click event to the next button
     nextButton();
+    // debugCountriesJSON(countries);
   } catch (error) {
     console.log(error);
   }
@@ -24,7 +30,7 @@ function pick_random_country() {
   return countries[randomIndex];
 }
 
-// check if any badchoice
+// update the score (first strike streak)
 listen_buttons(() => {
   score = document.querySelector(".choiceBad") ? 0 : score + 1;
 });

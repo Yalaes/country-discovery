@@ -6,7 +6,8 @@ export function prepareCountry(country) {
     flagUrl: country.flags.svg,
     capital: country.capital,
     region: country.region,
-    currency: country.currencies[0].code,
+    currency:
+      country.currencies?.[0]?.code ?? country.currencies?.[0]?.symbol ?? "N/A",
     language: country.languages[0].name,
     timeZone: country.timezones,
     population: country.population,
